@@ -183,10 +183,10 @@ PROBLEMS WITH SVGs for buttons
 using object within button
 
 ```tsx
-<button className='lg:hidden cursor-pointer'>
-	text
-	<object data='/icon-hamburger.svg'></object>
-</button>
+// <button className='lg:hidden cursor-pointer'>
+// 	text
+// 	<object data='/icon-hamburger.svg'></object>
+// </button>
 ```
 
 result: text gets a pointer but the object does not
@@ -195,9 +195,9 @@ button is focusable with tabbing
 using img tag
 
 ```tsx
-<button className='lg:hidden '>
-	<img src='/icon-hamburger.svg'></img>
-</button>
+// <button className='lg:hidden '>
+// 	<img src='/icon-hamburger.svg'></img>
+// </button>
 ```
 
 result: cursor works as expected and tabbing works

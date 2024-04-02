@@ -1,7 +1,5 @@
-import { Inter } from "next/font/google";
+import Head from "next/head";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Audiophile Ecommerce",
@@ -11,10 +9,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" type="image/png" sizes="32x32" href="../public/img/favicon-32x32.png"/>
-      </head>
-      <body> {children} </body>
+      <Head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png" />
+      </Head>
+      <body>{children}</body>
     </html>
   );
 }
