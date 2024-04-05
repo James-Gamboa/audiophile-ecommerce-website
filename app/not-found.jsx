@@ -2,12 +2,12 @@ import Link from "next/link"
 
 function NotFound() {
   return (
-    <div class="">
+    <div className="">
       <Link href="/">
-        <button class="">Back to Home</button>
+        <button className="">Back to Home</button>
       </Link>
-      <h2 class="">Page not found</h2>
-      <p class="">Could not find requested resource</p>
+      <h2 className="">Page not found</h2>
+      <p className="">Could not find requested resource</p>
     </div>
   );
 }
