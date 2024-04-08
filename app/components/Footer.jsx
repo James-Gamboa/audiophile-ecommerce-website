@@ -5,7 +5,7 @@ function Footer () {
   return(
   <footer>
     <div>
-      <nav className="space-x-10  lg:flex justify-center py-4">
+      <div className="space-x-10  lg:flex justify-center py-4">
           <Link href="/">Home</Link>
           <Link href="/app/headphones">Headphones</Link>
           <Link href="/app/Speakers">Speakers</Link>
@@ -13,7 +13,7 @@ function Footer () {
           <Image src="/img/shared/desktop/icon-facebook.png" alt="icon-facebook" height={25} width={50} />
           <Image src="/img/shared/desktop/icon-twitter.png" alt="icon-twitter"  height={25} width={50} />
           <Image src="/img/shared/desktop/icon-instagram.png" alt="icon-instagram"  height={25} width={50} />
-      </nav>
+      </div>
     </div>
       <div>
       <Image className="mx-8" src="/img/shared/desktop/logo.svg" alt="logo" height={25} width={143} />
