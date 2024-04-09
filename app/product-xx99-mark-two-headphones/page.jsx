@@ -35,84 +35,84 @@ function TwoHeadphones() {
           </div>
         </div>
       </div>
-      <div class="lg:max-w-[640px]">
-        <h2 class="h5 md:h3 mb-6 md:mb-8">Features</h2>
-        <p class="mb-6">Featuring a genuine leather head strap and premium earcups, these headphones deliver superior comfort for those who like to enjoy endless listening. It includes intuitive controls designed for any situation. Whether you’re taking a business call or just in your own personal space, the auto on/off and pause features ensure that you’ll never miss a beat.
+      <div className="lg:max-w-[640px]">
+        <h2 className="h5 md:h3 mb-6 md:mb-8">Features</h2>
+        <p className="mb-6">Featuring a genuine leather head strap and premium earcups, these headphones deliver superior comfort for those who like to enjoy endless listening. It includes intuitive controls designed for any situation. Whether you’re taking a business call or just in your own personal space, the auto on/off and pause features ensure that you’ll never miss a beat.
           The advanced Active Noise Cancellation with built-in equalizer allow you to experience your audio world on your terms. It lets you enjoy your audio in peace, but quickly interact with your surroundings when you need to. Combined with Bluetooth 5. 0 compliant connectivity and 17 hour battery life, the XX99 Mark II headphones gives you superior sound, cutting-edge technology, and a modern design aesthetic.
         </p>
       </div>
-      <div class="mt-24 md:mt-28 lg:mt-0 md:flex md:flex-row lg:flex-col md:space-x-40 lg:space-x-0">
-        <h2 class="h5 md:h3 mb-6 md:mb-8 ">In the box</h2>
+      <div className="mt-24 md:mt-28 lg:mt-0 md:flex md:flex-row lg:flex-col md:space-x-40 lg:space-x-0">
+        <h2 className="h5 md:h3 mb-6 md:mb-8 ">In the box</h2>
         <ul>
-          <li class="mb-2"><span class="text-orange-600 font-bold tracking-wide mr-6">1x</span> Headphone unit</li>
-          <li class="mb-2"><span class="text-orange-600 font-bold tracking-wide mr-6">2x</span> Replacement earcups</li>
-          <li class="mb-2"><span class="text-orange-600 font-bold tracking-wide mr-6">1x</span> User manual</li>
-          <li class="mb-2"><span class="text-orange-600 font-bold tracking-wide mr-6">1x</span> 3.5mm 5m audio cable</li>
-          <li class="mb-2"><span class="text-orange-600 font-bold tracking-wide mr-6">1x</span> Travel bag</li>
+          <li className="mb-2"><span className="text-orange-600 font-bold tracking-wide mr-6">1x</span> Headphone unit</li>
+          <li className="mb-2"><span className="text-orange-600 font-bold tracking-wide mr-6">2x</span> Replacement earcups</li>
+          <li className="mb-2"><span className="text-orange-600 font-bold tracking-wide mr-6">1x</span> User manual</li>
+          <li className="mb-2"><span className="text-orange-600 font-bold tracking-wide mr-6">1x</span> 3.5mm 5m audio cable</li>
+          <li className="mb-2"><span className="text-orange-600 font-bold tracking-wide mr-6">1x</span> Travel bag</li>
         </ul>
       </div>
-      <div class="content-container mt-20 md:flex md:space-x-[20px] lg:space-x-8 ">
-        <div class="md:space-y-[20px] lg:space-y-8">
-          <div class="rounded-xl overflow-hidden mb-[20px] md:mb-0">
+      <div className="content-container mt-20 md:flex md:space-x-[20px] lg:space-x-8 ">
+        <div className="md:space-y-[20px] lg:space-y-8">
+          <div className="rounded-xl overflow-hidden mb-[20px] md:mb-0">
             <picture>
-              <source media="(min-width: 1110px)" srcset="/img/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg" />
-              <source media="(min-width: 768px)" srcset="/img/product-xx99-mark-two-headphones/tablet/image-gallery-1.jpg" />
+              <source media="(min-width: 1110px)" srcSet="/img/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg" />
+              <source media="(min-width: 768px)" srcSet="/img/product-xx99-mark-two-headphones/tablet/image-gallery-1.jpg" />
               <Image src="/img/product-xx99-mark-two-headphones/mobile/image-gallery-1.jpg" alt="gallery item 1" width={250} height={250} />
             </picture>
           </div>
-          <div class="rounded-xl overflow-hidden mb-[20px] md:mb-0">
+          <div className="rounded-xl overflow-hidden mb-[20px] md:mb-0">
             <picture>
-              <source media="(min-width: 1110px)" srcset="/img/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg" />
-              <source media="(min-width: 768px)" srcset="/img/product-xx99-mark-two-headphones/tablet/image-gallery-2.jpg" />
+              <source media="(min-width: 1110px)" srcSet="/img/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg" />
+              <source media="(min-width: 768px)" srcSet="/img/product-xx99-mark-two-headphones/tablet/image-gallery-2.jpg" />
               <Image src="/img/product-xx99-mark-two-headphones/mobile/image-gallery-2.jpg" alt="gallery item 1" width={250} height={250} />
             </picture>
           </div>
         </div>
         <div>
-          <div class="rounded-xl overflow-hidden mb-[20px] md:mb-0">
+          <div className="rounded-xl overflow-hidden mb-[20px] md:mb-0">
             <picture>
-              <source media="(min-width: 1110px)" srcset="/img/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg" />
-              <source media="(min-width: 768px)" srcset="/img/product-xx99-mark-two-headphones/tablet/image-gallery-3.jpg" />
+              <source media="(min-width: 1110px)" srcSet="/img/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg" />
+              <source media="(min-width: 768px)" srcSet="/img/product-xx99-mark-two-headphones/tablet/image-gallery-3.jpg" />
               <Image src="/img/product-xx99-mark-two-headphones/mobile/image-gallery-3.jpg" alt="gallery item 1" width={250} height={250} />
             </picture>
           </div>
         </div>
       </div>
-      <section class="mt-[120px] content-container">
-        <h2 class="h5 md:h3 mb-10 text-center">You may also like</h2>
-        <div class="space-y-14 md:space-y-0 md:space-x-4 lg:space-x-8 md:flex md:flex-row">
-          <div class="flex flex-col items-center justify-between">
-            <div class="rounded-xl overflow-hidden mb-8">
+      <section className="mt-[120px] content-container">
+        <h2 className="h5 md:h3 mb-10 text-center">You may also like</h2>
+        <div className="space-y-14 md:space-y-0 md:space-x-4 lg:space-x-8 md:flex md:flex-row">
+          <div className="flex flex-col items-center justify-between">
+            <div className="rounded-xl overflow-hidden mb-8">
               <picture>
-                <source media="(min-width: 1110px)" srcset="/img/shared/desktop/image-xx99-mark-one-headphones.jpg" />
-                <source media="(min-width: 768px)" srcset="/img/shared/tablet/image-xx99-mark-one-headphones.jpg" />
+                <source media="(min-width: 1110px)" srcSet="/img/shared/desktop/image-xx99-mark-one-headphones.jpg" />
+                <source media="(min-width: 768px)" srcSet="/img/shared/tablet/image-xx99-mark-one-headphones.jpg" />
                 <Image src="/img/shared/mobile/image-xx99-mark-one-headphones.jpg" alt="xx59 headphones"  width={250} height={250}/>
               </picture>
             </div>
-            <h3 class="h5 mb-8 text-center">XX99 Mark I</h3>
-            <a href="/product/xx99-mark-one-headphones"><button class="button-one">See Product</button></a>
+            <h3 className="h5 mb-8 text-center">XX99 Mark I</h3>
+            <Link href="/product/xx99-mark-one-headphones"><button className="button-one">See Product</button></Link>
           </div>
-          <div class="flex flex-col items-center justify-between">
-            <div class="rounded-xl overflow-hidden mb-8">
+          <div className="flex flex-col items-center justify-between">
+            <div className="rounded-xl overflow-hidden mb-8">
               <picture>
-                <source media="(min-width: 1110px)" srcset="/img/shared/desktop/image-xx59-headphones.jpg" />
-                <source media="(min-width: 768px)" srcset="/img/shared/tablet/image-xx59-headphones.jpg" />
+                <source media="(min-width: 1110px)" srcSet="/img/shared/desktop/image-xx59-headphones.jpg" />
+                <source media="(min-width: 768px)" srcSet="/img/shared/tablet/image-xx59-headphones.jpg" />
                 <Image src="/img/shared/mobile/image-xx59-headphones.jpg" alt="xx59 headphones" width={250} height={250} />
               </picture>
             </div>
-            <h3 class="h5 mb-8 text-center">XX59</h3>
-            <a href="/product/xx59-headphones"><button class="button-one">See Product</button></a>
+            <h3 className="h5 mb-8 text-center">XX59</h3>
+            <Link href="/product/xx59-headphones"><button className="button-one">See Product</button></Link>
           </div>
-          <div class="flex flex-col items-center justify-between">
-            <div class="rounded-xl overflow-hidden mb-8">
+          <div className="flex flex-col items-center justify-between">
+            <div className="rounded-xl overflow-hidden mb-8">
               <picture>
-                <source media="(min-width: 1110px)" srcset="/img/shared/desktop/image-zx9-speaker.jpg" />
-                <source media="(min-width: 768px)" srcset="/img/shared/tablet/image-zx9-speaker.jpg" />
+                <source media="(min-width: 1110px)" srcSet="/img/shared/desktop/image-zx9-speaker.jpg" />
+                <source media="(min-width: 768px)" srcSet="/img/shared/tablet/image-zx9-speaker.jpg" />
                 <Image src="/img/shared/mobile/image-zx9-speaker.jpg" alt="xx59 headphones" width={250} height={250}/>
               </picture>
             </div>
-            <h3 class="h5 mb-8 text-center">ZX9 Speaker</h3>
-            <a href="/product/zx9-speaker"><button class="button-one">See Product</button></a>
+            <h3 className="h5 mb-8 text-center">ZX9 Speaker</h3>
+            <Link href="/product/zx9-speaker"><button className="button-one">See Product</button></Link>
           </div>
         </div>
       </section>
