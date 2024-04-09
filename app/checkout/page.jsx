@@ -7,31 +7,28 @@ function Checkout() {
   return (
       <div className="relative overflow-x-hidden">
         <div className="bg-black-900 text-white-100">
-          <div className="flex items-center justify-between md:justify-start lg:justify-between py-8 content-container">
-            <button className="lg:hidden hamburger-button"></button>
+          <div className="flex items-center justify-between md:justify-start lg:justify-between py-8 ">
+            <button className="lg:hidden "></button>
             <div className="md:ml-10 lg:ml-0">
             </div>
           <Header/>
             <div className="md:ml-auto lg:ml-0 flex items-center space-x-2">
-              <button className="user-button">
-                <i className="fas fa-user fa-lg"></i>
-              </button>
-              <button className="shopping-cart-button "></button>
+              <button className=""></button>
             </div>
           </div>
         </div>
         <main>
-          <div className="text-black-400 content-container mt-4 md:mt-8 lg:mt-20 mb-6 lg:mb-14">
+          <div className="text-black-400  mt-4 md:mt-8 lg:mt-20 mb-6 lg:mb-14">
             <Link href="/"><button>GoBack</button></Link>
           </div>
-          <div className="flex flex-col lg:flex-row lg:items-start lg:space-x-8 lg:mb-[140px] content-container">
+          <div className="flex flex-col lg:flex-row lg:items-start lg:space-x-8 lg:mb-[140px] ">
             <section className="px-6 lg:px-12  pt-6 md:pt-8 lg:pt-14 bg-white-100 rounded-lg mb-8">
-              <h2 className="h4 lg:h3 mb-8 lg:mb-10">Checkout</h2>
+              <h2 className="mb-8 lg:mb-10">Checkout</h2>
               <form action="#" id="user-info">
                 <div className="border rounded-lg p-3 mb-6">
                   <button className="button-two mb-2">Login</button>
-                  <p className="h6 my-2">Or</p>
-                  <p className="h6">Continue as guest:</p>
+                  <p className="my-2">Or</p>
+                  <p className="">Continue as guest:</p>
                 </div>
                 <div className="pb-2">
                   <h3 className="subtitle text-orange-600 mb-4">Billing Details</h3>
