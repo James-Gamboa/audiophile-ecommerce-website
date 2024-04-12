@@ -9,11 +9,19 @@ function Home() {
   return (
     <>
       <Header />
-      <span>New product</span>
-      <h1>XX99 Mark II Headphones</h1>
-      <Link href="./product-xx99-mark-two-headphones">
-        <button>See product</button>
-      </Link>
+      <div className="content-container flex justify-center lg:justify-start">
+      <picture>
+            <source media="(min-width: 1110px)" srcSet="/img/home/desktop/image-hero.jpg" />
+            <source media="(min-width: 768px)" srcSet="/img/home/tablet/image-hero.jpg" />
+            <Image src="/img/home/mobile/image-hero.jpg" alt="Image Hero" width={250} height={250} />
+          </picture>
+        <div className="flex flex-col text-center lg:text-left items-center lg:items-start pt-[198px] md:pt-[216px] lg:pt-[225px] text-white-100 md:max-w-[350px]">
+          <span className="overline-text inline-block mb-4 md:mb-6 text-black-400">New product</span>
+          <h1 className="h2 md:h1 mb-6">XX99 Mark II Headphones</h1>
+          <p className="mb-[28px] md:mb-10">Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.</p>
+          <Link href="./product-xx99-mark-two-headphones"><button className="button-one">See product</button></Link>
+          </div>
+          </div>
       <SectionProducts/>
       <div>
       <Image src="/img/shared/desktop/image-speakers.png" alt="speakers" height={200} width={300} />
