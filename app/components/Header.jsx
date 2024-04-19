@@ -8,11 +8,11 @@ function Header() {
 
     return (
         <>
-            <header>
-                <div className="container mx-auto px-4">
-                    <nav className="flex justify-between items-center py-4">
-                        <Image className="mx-8" src="/img/shared/desktop/logo.svg" alt="logo" height={25} width={143} />
-                        <div className="hidden lg:flex space-x-10">
+        <header>
+            <div className="container mx-auto px-4">
+                <nav className="flex justify-center items-center py-4">
+                    <Image className="mx-8" src="/img/shared/desktop/logo.svg" alt="logo" height={25} width={143} />
+                    <div className="hidden lg:flex space-x-10">
                             <Link href="/">Home</Link>
                             <Link href="../headphones">Headphones</Link>
                             <Link href="../speakers">Speakers</Link>

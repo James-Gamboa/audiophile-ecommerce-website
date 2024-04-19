@@ -10,7 +10,7 @@ function Home() {
         <>
             <div className="relative bg-black">
                 <div className="z-10 relative">
-                  <Header />
+                <Header />
                 </div>
                 <div className="flex justify-center lg:justify-start items-center relative z-0">
                     <picture className="w-full">
@@ -63,7 +63,6 @@ function Home() {
                     <button>See Product</button>
                 </Link>
             </div>
-
             <AudioGearSection />
             <Footer />
         </>
