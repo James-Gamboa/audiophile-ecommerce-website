@@ -13,11 +13,7 @@ function Home() {
                 <Header />
                 </div>
                 <div className="flex justify-center lg:justify-start items-center relative z-0">
-                    <picture className="w-full">
-                        <source media="(min-width: 1110px)" srcSet="/img/home/desktop/image-hero.jpg" />
-                        <source media="(min-width: 768px)" srcSet="/img/home/tablet/image-hero.jpg" />
-                        <Image src="/img/home/mobile/image-hero.jpg" alt="Image Hero" className="w-full h-auto" width={250} height={250} />
-                    </picture>
+                <Image src="/img/home/desktop/image-hero.jpg" alt="Image Hero" layout="responsive" width={250} height={250} className="w-full h-auto" />
                     <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center lg:text-left text-white md:max-w-[350px] px-4 lg:px-0">
                         <span className="overline-text inline-block mb-4 md:mb-6 text-black-400">New product</span>
                         <h1 className="md:h1 mb-6">XX99 Mark II Headphones</h1>
