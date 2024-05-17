@@ -1,6 +1,4 @@
-//@ts-ignore
 import { validateName, validateEmail, validatePhone, validateRequired } from "./FormValidate.utils"; // Adjust the import path as necessary
-
 describe("Validation Utilities", () => {
   describe("validateName", () => {
     it("should return error message if name is empty", () => {
