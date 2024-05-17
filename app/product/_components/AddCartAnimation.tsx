@@ -1,8 +1,8 @@
-import React, { CSSProperties, useEffect } from 'react'
-import ResponsiveImage from '../../components/ResponsiveImage'
-import { ResponsiveImageProps } from '../../lib/type'
-import { useWindowScrollHeight } from '../../hooks/useWindowScrollHeight'
-import './AddCartAnimation.css'
+import React, { CSSProperties, useEffect } from "react"
+import ResponsiveImage from "../../components/ResponsiveImage"
+import { ResponsiveImageProps } from "../../lib/type"
+import { useWindowScrollHeight } from "../../hooks/useWindowScrollHeight"
+import "./AddCartAnimation.css"
 
 export type CartAnimationProps = {
     productImageData: ResponsiveImageProps,
@@ -17,7 +17,7 @@ export default function AddCartAnimation({cartAnimationData, animateTrigger}: {c
     const windowScrollHeight = useWindowScrollHeight()
     
     return (
-        <div className={`product-image-animate-wrapper ${animateTrigger ? 'product-image-animate-active' : ''}`} 
+        <div className={`product-image-animate-wrapper ${animateTrigger ? "product-image-animate-active" : ""}`} 
             style={
                 {
                     "--top-position": `${windowScrollHeight + top}px`, 

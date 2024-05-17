@@ -1,17 +1,17 @@
-'use client'
-import React from 'react'
-import ToolBar from '../../components/ToolBar';
+"use client"
+import React from "react"
+import ToolBar from "../../components/ToolBar";
 import ProductionHighlight from "../../components/ProductionHighlight";
-import NavList from '../../components/NavList';
-import GoBack from '../_components/GoBack';
-import ProductHeader from '../_components/ProductHeader';
-import ProductFeatures from '../_components/ProductFeatures';
-import ProductGallery from '../_components/ProductGallery';
-import AlsoLike from '../_components/AlsoLike';
-import { useProduct } from '../_hooks/useProduct';
-import { useRouter } from 'next/navigation';
-import LoadingScreen from '../_components/LoadingScreen';
-import ErrorScreen from '../_components/ErrorScreen';
+import NavList from "../../components/NavList";
+import GoBack from "../_components/GoBack";
+import ProductHeader from "../_components/ProductHeader";
+import ProductFeatures from "../_components/ProductFeatures";
+import ProductGallery from "../_components/ProductGallery";
+import AlsoLike from "../_components/AlsoLike";
+import { useProduct } from "../_hooks/useProduct";
+import { useRouter } from "next/navigation";
+import LoadingScreen from "../_components/LoadingScreen";
+import ErrorScreen from "../_components/ErrorScreen";
 export default function Page({ params }: { params: { slug: string[] } }) {
     const [category, id] = params.slug
     const router = useRouter()
@@ -45,7 +45,7 @@ export default function Page({ params }: { params: { slug: string[] } }) {
             <AlsoLike />
             <NavList />
             <ProductionHighlight />
-            <div className='h-20'></div>
+            <div className="h-20"></div>
         </main>
     )
 }

@@ -1,12 +1,12 @@
-'use client'
-import React, { createContext, useContext, useReducer } from 'react';
-import { FormProps } from '../_lib/chekoutType';
+"use client"
+import React, { createContext, useContext, useReducer } from "react";
+import { FormProps } from "../_lib/chekoutType";
 
 type FormState = FormProps; // Your FormProps here
 type FormAction = 
-  | { type: 'UPDATE_FIELD_VALUE'; payload: { field: keyof FormState; value: string } }
-  | { type: 'UPDATE_FIELD_VALID'; payload: { field: keyof FormState; valid: boolean } }
-  | { type: 'RESET_FORM' };
+  | { type: "UPDATE_FIELD_VALUE"; payload: { field: keyof FormState; value: string } }
+  | { type: "UPDATE_FIELD_VALID"; payload: { field: keyof FormState; valid: boolean } }
+  | { type: "RESET_FORM" };
 
 
 const initialState: FormProps = { 
@@ -17,14 +17,14 @@ const initialState: FormProps = {
   zipCode: {value: "", valid: false}, 
   country: {value: "", valid: false}, 
   city: {value: "", valid: false},
-  payMethod: {value: 'eMoney', valid: true},
+  payMethod: {value: "eMoney", valid: true},
   eMoneyNumber: {value: "", valid: false},
   eMoneyPin: {value: "", valid: false}
 };
 
 function formReducer(state: FormState, action: FormAction): FormState {
   switch (action.type) {
-    case 'UPDATE_FIELD_VALUE':
+    case "UPDATE_FIELD_VALUE":
       return {
         ...state,
         [action.payload.field]: { 
@@ -32,7 +32,7 @@ function formReducer(state: FormState, action: FormAction): FormState {
           value: action.payload.value 
         }
       };
-    case 'UPDATE_FIELD_VALID':
+    case "UPDATE_FIELD_VALID":
       if (state[action.payload.field].valid !== action.payload.valid) {
         return {
           ...state,
@@ -40,10 +40,10 @@ function formReducer(state: FormState, action: FormAction): FormState {
         };
       }
       return state;
-    case 'RESET_FORM':
+    case "RESET_FORM":
       return initialState;
     default:
-      throw new Error('Unhandled action type');
+      throw new Error("Unhandled action type");
   }
 }
   
@@ -60,7 +60,7 @@ export const FormProvider: React.FC<{children: React.ReactNode}> = ({ children }
 export const useForm = () => {
     const context = useContext(FormContext);
     if (!context) {
-      throw new Error('useForm must be used within a FormProvider');
+      throw new Error("useForm must be used within a FormProvider");
     }
     return context;
 };

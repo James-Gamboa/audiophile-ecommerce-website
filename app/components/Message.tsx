@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
 export default function Message({ message, isVisible, closeMessage }: { message: string; isVisible: boolean; closeMessage: () => void }) {
     useEffect(() => {
@@ -6,7 +6,6 @@ export default function Message({ message, isVisible, closeMessage }: { message:
             closeMessage();
         }, 3000);
         
-        // Cleanup function to clear the timer
         return () => clearTimeout(timer);
     }, [closeMessage]);
 

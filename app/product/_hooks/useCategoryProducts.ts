@@ -1,6 +1,5 @@
-import React from 'react'
-import { products } from '../_lib/productsData'
-import { ProductCategoryItem } from '../_lib/type'
+import { products } from "../_lib/productsData"
+import { ProductCategoryItem } from "../_lib/type"
 export function useCategoryProducts(category:string): ProductCategoryItem[] {
     return products
             .filter(item => item.category === category)

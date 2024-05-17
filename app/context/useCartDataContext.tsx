@@ -1,20 +1,20 @@
-'use client'
-import React, { createContext, useReducer, useContext, useState, useMemo } from 'react';
-import { CartItem } from '../lib/type';
+"use client"
+import React, { createContext, useReducer, useContext, useState, useMemo } from "react";
+import { CartItem } from "../lib/type";
 
 
 type CartData = CartItem[];
 
 type CartAction =
-    | { type: 'ADD_ITEM'; payload: CartItem }
-    | { type: 'PLUS_ITEM_QUANTITY'; payload:number}
-    | {type: 'MINUX_ITEM_QUANTITY';payload:number }
-    | { type: 'DELETE_ITEM'; payload: number } // assuming payload is productId
-    | { type: 'CLEAR_CART' };
+    | { type: "ADD_ITEM"; payload: CartItem }
+    | { type: "PLUS_ITEM_QUANTITY"; payload:number}
+    | {type: "MINUX_ITEM_QUANTITY";payload:number }
+    | { type: "DELETE_ITEM"; payload: number } 
+    | { type: "CLEAR_CART" };
 
 const cartReducer = (state: CartData, action: CartAction): CartData => {
     switch (action.type) {
-        case 'ADD_ITEM':
+        case "ADD_ITEM":
             const existingItem = state.find(item => item.productId === action.payload.productId);
             if (existingItem) {
                 return state.map(item =>
@@ -25,24 +25,24 @@ const cartReducer = (state: CartData, action: CartAction): CartData => {
             } else {
                 return [...state, action.payload];
             }
-        case 'PLUS_ITEM_QUANTITY':
+        case "PLUS_ITEM_QUANTITY":
             return state.map(item =>
                 item.productId === action.payload
                     ? { ...item, quantity: item.quantity + 1 }
                     : item
             );
-        case 'MINUX_ITEM_QUANTITY':
+        case "MINUX_ITEM_QUANTITY":
             return state.map(item =>
                 item.productId === action.payload
                     ? { ...item, quantity: item.quantity > 0 ? item.quantity - 1 : 0 }
                     : item
             );
-        case 'DELETE_ITEM':
+        case "DELETE_ITEM":
             return state.filter(item => item.productId !== action.payload);
-        case 'CLEAR_CART':
+        case "CLEAR_CART":
             return [];
         default:
-            throw new Error('Unhandled action type');
+            throw new Error("Unhandled action type");
     }
 };
 
@@ -72,7 +72,7 @@ export const CartDataProvider: React.FC<{children: React.ReactNode}> = ({ childr
 export const useCartData = () => {
     const context = useContext(CartDataContext);
     if (!context) {
-        throw new Error('useCartData must be used within a CartDataProvider');
+        throw new Error("useCartData must be used within a CartDataProvider");
     }
     return context;
 };

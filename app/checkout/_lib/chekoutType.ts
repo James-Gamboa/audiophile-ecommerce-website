@@ -11,7 +11,7 @@ export type FormProps = {
     zipCode: InputTextField;
     city: InputTextField;
     country: InputTextField;
-    payMethod: {value: 'eMoney' | 'cash', valid: true};
+    payMethod: {value: "eMoney" | "cash", valid: true};
     eMoneyNumber: InputTextField;
     eMoneyPin: InputTextField;
 }

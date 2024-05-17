@@ -1,10 +1,10 @@
-'use client'
-import React, {useState, useRef, useEffect} from 'react'
-import ResponsiveImage from '../../components/ResponsiveImage'
-import { ResponsiveImageProps } from '../../lib/type'
-import { useCartData } from '../../context/useCartDataContext'
-import AddCartAnimation from './AddCartAnimation'
-import { CartAnimationProps } from './AddCartAnimation'
+"use client"
+import React, {useState, useRef, useEffect} from "react"
+import ResponsiveImage from "../../components/ResponsiveImage"
+import { ResponsiveImageProps } from "../../lib/type"
+import { useCartData } from "../../context/useCartDataContext"
+import AddCartAnimation from "./AddCartAnimation"
+import { CartAnimationProps } from "./AddCartAnimation"
 type ProductHeaderProps = {
     id: number;
     name: string;
@@ -79,26 +79,26 @@ export default function ProductHeader({headerData}:{headerData:  ProductHeaderPr
                     />
                     <AddCartAnimation cartAnimationData={cartAnimationData} animateTrigger={animateTrigger}/>
                 </div>
-                <div className='grid gap-6 self-center md:items-center  lg:gap-8'>
-                    <p className={`text-overline-size text-accent-color uppercase ${isNew ? '' : 'hidden'}`}>
+                <div className="grid gap-6 self-center md:items-center  lg:gap-8">
+                    <p className={`text-overline-size text-accent-color uppercase ${isNew ? "" : "hidden"}`}>
                         new product  
                     </p>
-                    <h1 className='text-3xl lg:text-5xl font-bold lg:w-8/12'>
+                    <h1 className="text-3xl lg:text-5xl font-bold lg:w-8/12">
                         {name}
                     </h1>
-                    <p className='text-secondary-color lg:w-10/12'>
+                    <p className="text-secondary-color lg:w-10/12">
                         {description}
                     </p>
-                    <div className='text-xl font-bold'>
+                    <div className="text-xl font-bold">
                         $ {price.toLocaleString()}
                     </div>
-                    <div className='flex gap-4'>
-                        <div className='flex w-5/12 bg-content-color font-bold'>
-                            <div className='flex-1 flex justify-center items-center text-secondary-color cursor-pointer hover:text-accent-color' onClickCapture={minusquantity}>-</div>
-                            <div className='flex-1 flex justify-center items-center'>{quantity}</div>
-                            <div className='flex-1 flex justify-center items-center text-secondary-color cursor-pointer hover:text-accent-color' onClickCapture={addquantity}>+</div>
+                    <div className="flex gap-4">
+                        <div className="flex w-5/12 bg-content-color font-bold">
+                            <div className="flex-1 flex justify-center items-center text-secondary-color cursor-pointer hover:text-accent-color" onClickCapture={minusquantity}>-</div>
+                            <div className="flex-1 flex justify-center items-center">{quantity}</div>
+                            <div className="flex-1 flex justify-center items-center text-secondary-color cursor-pointer hover:text-accent-color" onClickCapture={addquantity}>+</div>
                         </div>
-                        <div className='block text-xs py-3 px-8 bg-button-orange-color text-white uppercase tracking-wider cursor-pointer hover:bg-button-orange-hover-color' onClickCapture={addtoCart}>
+                        <div className="block text-xs py-3 px-8 bg-button-orange-color text-white uppercase tracking-wider cursor-pointer hover:bg-button-orange-hover-color" onClickCapture={addtoCart}>
                             Add to cart
                         </div>
                     </div>

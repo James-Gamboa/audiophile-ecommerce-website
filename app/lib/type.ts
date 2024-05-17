@@ -21,7 +21,7 @@ export type ProductBoxItem = {
     name: string, count: number
 }
 
-export type Category = 'headphones' | 'earphones' | 'speakers';
+export type Category = "headphones" | "earphones" | "speakers";
 
 export type Product = {
     id: number;
