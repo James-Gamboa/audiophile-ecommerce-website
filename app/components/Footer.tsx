@@ -1,4 +1,3 @@
-import React from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { navList } from "../lib/navList"
@@ -22,7 +21,7 @@ export default function Footer() {
     }
   ]
   return (
-    <footer className=" bg-footer-color">
+    <footer className="bg-footer-color">
         <div className="container relative mx-auto p-10 md:px-10  text-center md:text-left text-secondary-color  gap-8 footer-container">
             <div className="w-28 h-1 bg-orange-color absolute top-0 left-1/2 -translate-x-1/2 md:left-10 md:translate-x-0"></div>
             <div className="footer-logo flex justify-center md:justify-start">
@@ -62,7 +61,7 @@ export default function Footer() {
                   Copyright 2024. All Rights Reserved
                 </p>
             </div>
-            <div className="footer-shareLinks">
+            <div className="c-shareLinks">
                 <ul className="flex gap-6 justify-center md:justify-end items-center">
                   {
                     shareLinks.map((item, index) => {

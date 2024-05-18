@@ -1,4 +1,4 @@
-import React from "react"
+
 import LinkButton from "../../components/LinkButton";
 import { ProductCategoryItem } from "../_lib/type"
 import ResponsiveImage from "../../components/ResponsiveImage";

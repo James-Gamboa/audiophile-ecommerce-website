@@ -5,42 +5,50 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-    theme: {
-      extend: {
-        colors: {
-          bg: '#fafafa',
-          accent: '#d87d4a',
-          accentLight: '#fbaf85',
-          gray: '#f1f1f1',
-          lightGray: '#d3d3d3',
-          white: '#fff',
-          black: '#191919',
-          text: 'rgba(0,0,0,0.5)',
-          textLight: 'rgba(255,255,255,0.5)',
-          divider: 'rgba(255,255,255,0.1)',
-          placeholder: 'rgba(0,0,0,.4)',
-          inputBorder: '#CFCFCF',
-          inputError: '#CD2C2C',
-        },
-        fontFamily: {
-          heading: ['Manrope', 'sans-serif'],
-          body: ['Manrope', 'sans-serif'],
-        },
-        container: {
-          center: true,
-          padding: '1rem',
-          screens: {
-            lg: '72.375rem',
+  theme: {
+    extend: {
+      colors: {
+        "primary-color": "#000000",
+        "secondary-color": "#979797",
+        "accent-color": "#D87D4A",
+      },
+      fontSize: {
+        xs: ["13px", "25px"],
+        sm: ["14px", "19px"],
+        base: ["15px", "25px"],
+        xl: ["18px", "24px"],
+        "2xl": ["24px", "33px"],
+        "3xl": ["28px", "38px"],
+        "4xl": ["36px", "36px"],
+        "5xl": ["40px", "44px"],
+        "6xl": ["56px", "58px"],
+        "overline-size": [
+          "14px",
+          {
+            lineHeight: "19px",
+            letterSpacing: "10px",
           },
-        },
-        boxShadow: {
-          outline: 'none',
-        },
-        typography: {
-        },
+        ],
+      },
+      borderColor: {
+        "input-default-color": "#CFCFCF",
+        "input-focus-color": "#D87D4A",
+        "input-alert-color": "#CD2C2C",
+      },
+      backgroundColor: {
+        "orange-color": "#D87D4A",
+        "button-orange-color": "#D87D4A",
+        "button-orange-hover-color": "#fbaf85",
+        "content-color": "#f1f1f1",
+        "footer-color": "#101010",
+      },
+      letterSpacing: {
+        "overline-spacing": "10px",
+      },
+      maxWidth: {
+        "desktop-width": "1110px",
       },
     },
-    plugins: [
-    ],
-  };
-  
+  },
+  plugins: [],
+};

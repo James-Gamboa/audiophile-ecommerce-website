@@ -23,7 +23,7 @@ export function useProduct(category: string, id: number): { data: Product | null
       result ? setData(result) : setError("Product not existed");
     }
     fetchProduct()
-  }, [category, id, mockFetch]); // Dependencies array to re-run effect when category or id changes
+  }, [category, id, mockFetch]);
 
   return { data, error, loading };
 }

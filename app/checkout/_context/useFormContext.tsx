@@ -2,7 +2,7 @@
 import React, { createContext, useContext, useReducer } from "react";
 import { FormProps } from "../_lib/chekoutType";
 
-type FormState = FormProps; // Your FormProps here
+type FormState = FormProps;
 type FormAction = 
   | { type: "UPDATE_FIELD_VALUE"; payload: { field: keyof FormState; value: string } }
   | { type: "UPDATE_FIELD_VALID"; payload: { field: keyof FormState; valid: boolean } }

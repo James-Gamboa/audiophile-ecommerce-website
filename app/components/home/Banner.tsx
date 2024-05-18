@@ -1,4 +1,4 @@
-import React from "react"
+
 import Image from "next/image"
 import "./Banner.css"
 import LinkButton from "../LinkButton"

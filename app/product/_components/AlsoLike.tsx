@@ -1,4 +1,4 @@
-import React from "react"
+
 import ResponsiveImage from "../../components/ResponsiveImage"
 import LinkButton from "../../components/LinkButton"
 import { useAlsoLikeProducts } from "../_hooks/useAlsoLikeProdudts"

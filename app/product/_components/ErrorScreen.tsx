@@ -1,4 +1,4 @@
-import React from "react"
+
 import ToolBar from "../../components/ToolBar"
 import GoBack from "./GoBack"
 export default function ErrorScreen() {

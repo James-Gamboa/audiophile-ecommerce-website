@@ -6,10 +6,10 @@ export function middleware(req: NextRequest) {
     return NextResponse.rewrite(new URL("/product/headphones", req.url));
   }
   if (req.nextUrl.pathname.startsWith("/product")) {
-      const slug = req.nextUrl.pathname.split("/")[2]; // Get the slug from URL
-      const slugValid = navList.find(item => item.title === slug); // Validation logic
+      const slug = req.nextUrl.pathname.split("/")[2]; 
+      const slugValid = navList.find(item => item.title === slug); 
       if (!slugValid) {
-        return NextResponse.rewrite(new URL("/404", req.url)); // Redirect to 404 page
+        return NextResponse.rewrite(new URL("/404", req.url));
       }
   }
 }

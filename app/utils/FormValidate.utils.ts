@@ -2,7 +2,6 @@ export function validateName(name: string): string | null {
     if (!name.trim()) {
       return "Name is required.";
     }
-    // Add any other name-specific validation rules here
     return null;
 }
 
@@ -17,21 +16,20 @@ export function validateEmail(email: string): string | null {
 }
 
 export function validatePhone(phone: string): string | null {
-    const regex = /^[0-9]+$/;
-    if (!phone) {
+  const regex = /^[0-9]+$/;
+  if (!phone) {
       return "Phone number is required.";
-    } else if (!regex.test(phone)) {
+  } else if (!regex.test(phone)) {
       return "Invalid phone number. Only digits are allowed.";
-    } else if (phone.length < 10 || phone.length > 15) {
-      return "Phone number should be between 10 and 15 digits.";
-    }
-    return null;
+  } else if (phone.length < 8 || phone.length > 10) {
+      return "Phone number should be between 8 and 10 digits.";
+  }
+  return null;
 }
 
 export function validateRequired(value: string): string | null {
   if (!value.trim()) {
     return "vlaue is required.";
   }
-  // Add any other name-specific validation rules here
   return null;
 }

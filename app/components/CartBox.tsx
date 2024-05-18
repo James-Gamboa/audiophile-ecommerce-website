@@ -5,7 +5,6 @@ import ToolBar from "./ToolBar"
 import Link from "next/link"
 import { useCartData } from "../context/useCartDataContext"
 import CartElement from "./CartElement"
-import "./CartBox.css"
 export default function CartBox() {
     const {isCartBoxShow, cartData, total, dispatch, toggleCartBox} = useCartData()
     const clearCart = () => {

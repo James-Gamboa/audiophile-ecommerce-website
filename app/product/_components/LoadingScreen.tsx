@@ -1,4 +1,4 @@
-import React from "react"
+
 import "./LoadingScreen.css"
 import ToolBar from "../../components/ToolBar"
 import GoBack from "./GoBack"

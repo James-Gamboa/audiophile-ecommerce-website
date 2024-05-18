@@ -1,4 +1,4 @@
-import React from "react"
+
 import { products } from "../_lib/productsData";
 import { Product } from "../../lib/type";
 

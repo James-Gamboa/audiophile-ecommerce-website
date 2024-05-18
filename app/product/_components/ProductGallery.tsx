@@ -1,4 +1,4 @@
-import React from "react"
+
 import ResponsiveImage from "../../components/ResponsiveImage"
 import { ResponsiveImageProps } from "../../lib/type"
 import "./ProductGallery.css"

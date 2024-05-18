@@ -1,4 +1,4 @@
-import React from "react"
+
 import { ProductBoxItem } from "../../lib/type"
 type FeaturesProps = {
     features: string;
